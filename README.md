@@ -81,6 +81,18 @@ The PostgreSQL database should have the following table interactions:
       api_reply TEXT NOT NULL,
       created_at TIMESTAMPTZ DEFAULT NOW()
 );
+```
+
+### Example .env File
+```env
+TELEGRAM_TOKEN=<your_telegram_token>
+API_URL=<weather_api_url>
+API_KEY=<your_weather_api_key>
+DB_HOST=<database_host>
+DB_NAME=<database_name>
+DB_USER=<database_user>
+DB_PASSWORD=<database_password>
+```
 
 This documentation provides a complete overview of the Weather Bot, including:
 - Key dependencies and how to set them up.
