@@ -9,7 +9,7 @@ This Telegram bot provides current weather information and a 3-day weather forec
 ### Dependencies
 
 To run the project, the following libraries are required:
-- `python-dotenv` — for loading environment variables.
+- `python-dotenv` — for loading environment variables(local).
 - `requests` — for making HTTP requests.
 - `psycopg2` — for interacting with PostgreSQL database.
 - `python-telegram-bot` — for creating the Telegram bot.
@@ -61,9 +61,13 @@ The project uses environment variables for sensitive data. Create a `.env` file 
 
 3. Create a .env file in the project root and add the required environment variables.
 
-4. Run the bot:
+4. Build and Run with Docker
    ```bash
-   python bot.py
+   docker-compose up --build
+
+## Prerequisites
+- [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/)
+- Python 3.8 or higher (if running locally)
 
 ### Notes
 
