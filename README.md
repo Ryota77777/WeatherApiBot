@@ -67,8 +67,8 @@ The project uses environment variables for sensitive data. Create a `.env` file 
 
 ## Database Structure
 The PostgreSQL database should have the following table interactions:
-   ```sql
-   CREATE TABLE interactions (
+```sql
+CREATE TABLE interactions (
     id SERIAL PRIMARY KEY,
     user_id INT NOT NULL,
     user_message TEXT NOT NULL,
