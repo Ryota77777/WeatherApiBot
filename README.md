@@ -65,22 +65,22 @@ The project uses environment variables for sensitive data. Create a `.env` file 
    ```bash
    python bot.py
 
-## Database Structure
-The PostgreSQL database should have the following table interactions:
-```sql
-CREATE TABLE interactions (
-    id SERIAL PRIMARY KEY,
-    user_id INT NOT NULL,
-    user_message TEXT NOT NULL,
-    api_reply TEXT NOT NULL,
-    created_at TIMESTAMPTZ DEFAULT NOW()
-);
-
 ### Notes
 
 - The bot uses asynchronous request handling with the python-telegram-bot library and async functions.
 - The database interaction is handled using the psycopg2 library.
 - The weather data is fetched via HTTP requests to the weather API, returning the data in JSON format.
+
+## Database Structure
+The PostgreSQL database should have the following table interactions:
+   ```sql
+   CREATE TABLE interactions (
+       id SERIAL PRIMARY KEY,
+      user_id INT NOT NULL,
+      user_message TEXT NOT NULL,
+      api_reply TEXT NOT NULL,
+      created_at TIMESTAMPTZ DEFAULT NOW()
+);
 
 ### Example .env File
    ```bash
