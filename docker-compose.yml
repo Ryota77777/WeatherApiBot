@@ -21,7 +21,7 @@ services:
       DB_NAME: DB_NAME
       DB_USER: DB_USER
       DB_PASSWORD: DB_PASSWORD
-      TELEGRAM_TOKEN: "7828740135:AAEodeF8duYiaHMeUVmEaL4ZG2MFCnsgfPA"
+      TELEGRAM_TOKEN: TELEGRAM_TOKEN
       API_URL: "https://api.weatherapi.com/v1"
       API_KEY: "TELEGRAM_TOKEN"
     depends_on:
